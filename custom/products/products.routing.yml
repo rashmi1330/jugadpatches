@@ -1,0 +1,8 @@
+products.qr.url:
+  path: '/image-qr-generate-with-url'
+  defaults:
+    _controller: '\Drupal\products\Controller\ProductQrCodeGenerate::withUrl'
+  requirements:
+    # Needs to be accessed by an anonymous user.
+    _access: 'TRUE'
+

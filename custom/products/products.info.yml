@@ -1,0 +1,9 @@
+name: Products Module
+description: Product Page and Provides a QR Code formatter for the Product Link field
+package: Custom
+type: module
+version: 1.0
+core: 8.x
+dependencies:
+  - link
+  - block
