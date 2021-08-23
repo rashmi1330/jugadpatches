@@ -60,16 +60,15 @@ class ProductQrCodeBlock extends BlockBase implements BlockPluginInterface {
 
         $page_url = urlencode($base_url . $path);
      
-        $url = "//chart.apis.google.com/chart?chs={$width}x{$width}&cht=qr&chl={$page_url}";
-        //$url = $qrCode->getDataUri();
+        return  views_embed_view('products', 'block_1', );
     
-        return array(
+       /* return array(
             '#theme' => 'products_qr_code_block',
             '#url' => $url,
             '#width' => $width,
             '#height' => $width,
             '#caption' => 'To Purchase this product on our app to avail exclusive app-only',
-        ); 
+        ); */
     }
 
 }
